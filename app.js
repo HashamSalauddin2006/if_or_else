@@ -1,25 +1,52 @@
-var championstrophy = prompt("Frist match is champions Trophy 2025?");
 
-if (championstrophy === "19/2/2025") {
-  console.log("Good Answer*");
-  var semiFinal1 = prompt("champions Trophy 2025 1st Semi-Final Team Name?");
-  if (semiFinal1 === "India vs Australia") {
-    console.log("Good Answer*");
-    var semiFinal2 = prompt("champions Trophy 2025 2nd Semi-Final Team Name?");
-    if (semiFinal2 === "South Africa vs New Zealand") {
-      console.log("Good Answer*");
-      var final = prompt("champions Trophy 2025 Winning Team Name?");
-      if (final === "India") {
-        console.log("Good Answer*");
-      } else {
-        console.log("Wrong Answer");
-      }
-    } else {
-      console.log("Wrong Answer");
-    }
-  } else {
-    console.log("Wrong Answer");
-  }
-} else {
-  console.log("Wrong Answer");
+
+
+var name1 = (prompt('Enter your Name'));
+var Biology = Number(prompt("Biology number"));
+var English = Number(prompt('English number'));
+var Mathmematice = Number(prompt('Mathmematice number'));
+var PakStudies = Number(prompt('Pak Studies number'));
+var Chemitey = Number(prompt('Chemitey number'));
+var Physics = Number(prompt('Physics number'));
+var Sindhi = Number(prompt('Sindhi number'));
+
+
+var totle = (Biology + English + Mathmematice + PakStudies + Chemitey + Physics + Sindhi);
+
+var percentage = (totle / 700) * 100
+
+if (percentage >= 80 && percentage < 101) {
+    document.write( name1 + " "+ 'A+')
 }
+else if (percentage >= 70 && percentage < 80) {
+    document.write( name1 + " "+  'A')
+}
+else if (percentage >= 60 && percentage < 70) {
+    document.write( name1 + " "+ 'B')
+}
+else if (percentage >= 50 && percentage < 60) {
+    document.write( name1 + " "+ 'C')
+}
+else if (percentage >= 40 && percentage < 50) {
+    document.write( name1 + " "+ 'D')
+}
+else if (percentage >= 30 && percentage < 40) {
+    document.write( name1 + " "+ 'E')
+}
+else {
+    document.write( name1 +" "+  ' your are Fail ')
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
